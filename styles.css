@@ -1,10 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Add a subtle background texture or pattern */
+/* Light Mode (default) styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -23,46 +17,6 @@ body {
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-nav {
-    background: #333;
-    color: #fff;
-    padding: 15px 0;
-}
-
-nav .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav .logo a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-nav .nav-links {
-    list-style: none;
-}
-
-nav .nav-links li {
-    display: inline;
-    margin-left: 20px;
-}
-
-nav .nav-links a {
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 10px;
-}
-
-nav .nav-links a:hover {
-    background: #444;
-    border-radius: 5px;
-}
-
-/* Hero Section - With Gradient Animation */
 header {
     height: 100vh;
     display: flex;
@@ -101,17 +55,6 @@ h2 {
     position: relative;
 }
 
-h2::after {
-    content: '';
-    width: 60px;
-    height: 4px;
-    background-color: #7f00ff;
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
 .mod {
     margin-bottom: 30px;
     background-color: #fff;
@@ -146,4 +89,39 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #f4f4f4;
+}
+
+body.dark-mode .container {
+    background: linear-gradient(135deg, rgba(30, 30, 30, 0.9), rgba(40, 40, 40, 0.9));
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode header {
+    background: linear-gradient(45deg, #1e1e2f, #5e00a8, #004f99, #00c677, #a900ff, #5e009f);
+    background-size: 400% 400%;
+    color: #f4f4f4;
+}
+
+body.dark-mode section {
+    background: linear-gradient(180deg, rgba(40,40,40,0.9), rgba(30,30,30,0.9));
+}
+
+body.dark-mode footer {
+    background: #222;
+    color: #ccc;
+}
+
+body.dark-mode .btn {
+    background-color: #5e009f;
+    color: #fff;
+}
+
+body.dark-mode .btn:hover {
+    background-color: #7f00ff;
 }
