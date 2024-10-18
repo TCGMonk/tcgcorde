@@ -69,10 +69,15 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white;
+    color: #333;  /* Change to a darker text color */
     background: linear-gradient(45deg, #7f00ff, #e100ff, #00c6ff, #00ff99, #ff6ec7, #9d00ff);
     background-size: 400% 400%;
     animation: gradientAnimation 20s ease infinite;
+}
+
+header h1, header p {
+    color: #000; /* Set a darker text color for the title and description */
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7); /* Add a subtle shadow for better readability */
 }
 
 @keyframes gradientAnimation {
