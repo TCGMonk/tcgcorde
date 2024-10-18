@@ -1,52 +1,78 @@
 /* Other styles remain the same */
 
-/* Updated Animated Gradient Background for Hero Section */
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+/* Add a subtle background texture or pattern to white sections */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    background-image: radial-gradient(circle, rgba(255,255,255,0.3) 1px, transparent 1px);
+    background-size: 20px 20px;
 }
 
-header {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    background: linear-gradient(45deg, #7f00ff, #e100ff, #00c6ff, #00ff99, #ff6ec7, #9d00ff);
-    background-size: 400% 400%;
-    animation: gradientAnimation 20s ease infinite; /* Slower and deeper movement */
+/* Container styles: add subtle shadow and gradient for depth */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(250, 250, 250, 0.9));
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05); /* Soft shadow for depth */
 }
 
-header h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
+/* Add a soft gradient to the sections' backgrounds */
+section {
+    padding: 50px 0;
+    background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(245,245,245,0.9));
+    border-radius: 8px;
+    margin-bottom: 40px;
 }
 
-header p {
-    font-size: 24px;
-}
-
+/* Styling for buttons to make them pop */
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #7f00ff; /* Vibrant purple for buttons */
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 20px;
     font-size: 18px;
+    transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #555;
+    background-color: #9d00ff; /* Slightly brighter purple on hover */
 }
 
-/* Other styles remain the same */
+/* Subtle divider lines between sections */
+section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: #7f00ff;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Footer shadow for depth */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0px -4px 12px rgba(0, 0, 0, 0.1); /* Shadow for footer depth */
+}
+
+footer p {
+    margin: 0;
+}
