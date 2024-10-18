@@ -75,9 +75,14 @@ header {
     animation: gradientAnimation 20s ease infinite;
 }
 
-header h1, header p {
-    color: #000; /* Set a darker text color for the title and description */
-    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7); /* Add a subtle shadow for better readability */
+header h1 {
+    color: #000; /* Change the title to black or a dark color */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); /* Add a white shadow for contrast */
+}
+
+header p {
+    color: #333; /* Use a slightly lighter color for the subtitle */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.6); /* Add a shadow for contrast */
 }
 
 @keyframes gradientAnimation {
