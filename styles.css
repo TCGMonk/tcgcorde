@@ -7,11 +7,14 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 .container {
     width: 80%;
     margin: 0 auto;
+    padding: 20px;
 }
 
 nav {
@@ -45,10 +48,16 @@ nav .nav-links li {
 nav .nav-links a {
     color: #fff;
     text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav .nav-links a:hover {
+    background: #444;
+    border-radius: 5px;
 }
 
 header {
-    background: url('https://source.unsplash.com/1600x900/?tech') no-repeat center center/cover;
+    background: url('https://source.unsplash.com/1600x900/?tech,game') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -59,11 +68,26 @@ header {
 
 header h1 {
     font-size: 48px;
+    margin-bottom: 10px;
 }
 
 header p {
     font-size: 24px;
-    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.btn:hover {
+    background-color: #555;
 }
 
 section {
@@ -76,8 +100,12 @@ h2 {
     text-align: center;
 }
 
-.project {
-    margin-bottom: 20px;
+.mod {
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 footer {
