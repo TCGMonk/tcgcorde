@@ -1,6 +1,6 @@
 /* Other styles remain the same */
 
-/* Animated Gradient Background for Hero Section */
+/* Updated Animated Gradient Background for Hero Section */
 @keyframes gradientAnimation {
     0% {
         background-position: 0% 50%;
@@ -20,9 +20,9 @@ header {
     justify-content: center;
     text-align: center;
     color: white;
-    background: linear-gradient(45deg, #00c6ff, #0072ff, #00ff99, #ff6ec7);
-    background-size: 300% 300%;
-    animation: gradientAnimation 15s ease infinite; /* Smooth animation */
+    background: linear-gradient(45deg, #7f00ff, #e100ff, #00c6ff, #00ff99, #ff6ec7, #9d00ff);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite; /* Slower and deeper movement */
 }
 
 header h1 {
