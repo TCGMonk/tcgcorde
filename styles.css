@@ -85,10 +85,6 @@ header p {
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.6); /* Add a shadow for contrast */
 }
 
-/* Example CSS for the main title */
-.hero-content h1 {
-    color: #ff5733; /* Change to your desired color */
-}
 
 @keyframes gradientAnimation {
     0% {
